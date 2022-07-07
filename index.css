@@ -65,7 +65,7 @@ button#get-color-scheme-btn {
 }
 
 .color, .hex-color {
-    width: 16.667%;
+    width: 20%;
 }
 
 @media (max-width:550px){

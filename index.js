@@ -7,7 +7,7 @@ form.addEventListener('click', function(e){
     e.preventDefault()
     const colorSeed = document.getElementById('color-seed').value.slice(1,7)
     const schemeMode = document.getElementById('scheme-mode').value
-    fetch(`https://www.thecolorapi.com/scheme?hex=${colorSeed}&mode=${schemeMode}&count=6`).then(res => res.json()).then(data => {
+    fetch(`https://www.thecolorapi.com/scheme?hex=${colorSeed}&mode=${schemeMode}&count=5`).then(res => res.json()).then(data => {
         let hexColor = ''
         let colorHtml = ''
         let hexColorHtml = ''
