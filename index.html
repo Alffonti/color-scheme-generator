@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Color Scheme Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;900&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href='index.css'>
+    </head>
+<body>
+    <form id='new-color-scheme'>
+        <input id='color-seed' aria-label='Color picker' type='color' value="#ff0000">
+        <select id='scheme-mode' aria-label='Scheme mode'>
+            <option value='monochrome'>Monochrome</option>
+            <option value='monochrome-dark'>Monochrome Dark</option>
+            <option value='monochrome-light'>Monochrome Light</option>
+            <option value='analogic'>Analogic</option>
+            <option value='complement'>Complement</option>
+            <option value='analogic-complement'>Analogic-complement</option>
+            <option value='triad'>Triad</option>
+        </select>
+        <button id="get-color-scheme-btn">Get color scheme</button>
+    </form>
+    <div id='colors-generated'>
+        <div class="color" style="background-color:#F55A5A"></div>
+        <div class="color" style="background-color:#2B283A"></div>
+        <div class="color" style="background-color:#FBF3AB"></div>
+        <div class="color" style="background-color:#AAD1B6"></div>
+        <div class="color" style="background-color:#A626D3"></div>
+    </div>
+    <div id='hex-code-generated'>
+        <p class="hex-color">#F55A5A</p>
+        <p class="hex-color">#2B283A</p>
+        <p class="hex-color">#FBF3AB</p>
+        <p class="hex-color">#AAD1B6</p>
+        <p class="hex-color">#A626D3</p>
+    </div>
+    <script src='index.js'></script>
+</body>
+</html>

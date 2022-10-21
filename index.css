@@ -1,0 +1,97 @@
+/* https://www.figma.com/file/uUSgPbp7sSmaAdQBp5kC6h/Color-Scheme-Generator */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    background: #FFFFFF;
+    color: #1F293A;
+    line-height: 1.4;
+    text-align: center;
+}
+
+form#new-color-scheme {
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input#color-seed, select#scheme-mode, button#get-color-scheme-btn{
+    cursor: pointer;
+}
+
+input#color-seed, button#get-color-scheme-btn{
+    height: 43px;
+}
+
+select#scheme-mode, button#get-color-scheme-btn {
+    background: #FFFFFF;
+    color: #1F293A;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+select#scheme-mode {
+    font-size: 1rem;
+    padding: .75em 1.5em;
+    line-height: 43px;
+}
+
+button#get-color-scheme-btn {
+    font-size: .75rem;
+    font-weight: 500;
+    padding: 1.25em 1.5em;
+}
+
+#colors-generated {
+    display: flex;
+    height: 75vh;
+    background: whitesmoke;
+}
+
+#hex-code-generated {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+.color, .hex-color {
+    width: 20%;
+}
+
+// .hex-color {
+//     cursor: pointer;
+// }
+
+@media (max-width:550px){
+    body {
+        font-size: 0.75rem;
+    }
+    form#new-color-scheme {
+        height: 25vh;
+        display: grid;
+        margin: 1.5em auto;
+    }
+    input#color-seed {
+        width: 100%;
+    }
+    input#color-seed, select#scheme-mode, button#get-color-scheme-btn{
+        margin-bottom: 1em;
+    }
+    #colors-generated {
+        height: 50vh;
+    }
+    
+    #hex-code-generated {
+        height: 10vh;
+    }
+}
