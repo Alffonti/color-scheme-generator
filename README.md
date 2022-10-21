@@ -1,4 +1,5 @@
-# x
+# Color Scheme Generator
+
 This is a project of the [Scrimba](https://scrimba.com) Frontend Career Path.
 
 ## About The Project
