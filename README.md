@@ -16,4 +16,4 @@ Live site: https://color-scheme-generator-by-alphfonti.netlify.app
 
 ## Acknowledgments
 
-- [Scrimba](https://scrimba.com)
+- [Chiamaka Ikeanyi](https://chiamakaikeanyi.dev/how-to-copy-text-with-ease-in-javascript-using-the-clipboard-api/)

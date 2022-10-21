@@ -1,6 +1,8 @@
 const form = document.getElementById('get-color-scheme-btn')
 const colors = document.getElementById('colors-generated')
 const hexColors = document.getElementById('hex-code-generated')
+const hexColorCodes = document.querySelectorAll('.hex-color')
+
 
 form.addEventListener('click', function(e){
     e.preventDefault()
@@ -19,3 +21,22 @@ form.addEventListener('click', function(e){
         hexColors.innerHTML = hexColorHtml
     })
 })
+
+hexColorCodes.forEach(item => {
+    item.addEventListener('click', async event => {
+      if (!navigator.clipboard) {
+        // Clipboard API is not available
+        return;
+      }
+      try {
+        await navigator.clipboard.writeText(event.target.innerText);
+        let hexCode = event.target.textContent
+        event.target.textContent = 'Copied to clipboard';
+        setTimeout(() => {
+            event.target.textContent = hexCode;
+        }, 1100)
+      } catch (err) {
+        console.error('Failed to copy!', err);
+      }
+    });
+  });

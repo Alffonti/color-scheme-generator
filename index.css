@@ -68,9 +68,9 @@ button#get-color-scheme-btn {
     width: 20%;
 }
 
-// .hex-color {
-//     cursor: pointer;
-// }
+.hex-color {
+    cursor: pointer;
+}
 
 @media (max-width:550px){
     body {
